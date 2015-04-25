@@ -1,0 +1,83 @@
+doctype html
+html(lang="en").no-js
+  head
+    meta(charset="utf-8")
+    meta(http-equiv="X-UA-Compatible", content="IE=edge,chrome=1")
+    title Heather Argus | Graphic Designer
+    meta(name="description", content="Heather Argus | Graphic Designer")
+    <script src="//use.typekit.net/hmb2zfg.js"></script>
+    <script>try{Typekit.load();}catch(e){}</script>
+    include _head.jade
+
+  body#index
+    a(href="#main").visuallyhidden Skip to main content
+    .container
+      header.header.page-padding
+        .row
+          .columns.medium-centered.medium-10
+            h1.h1
+              span.visuallyhidden heather.
+              img(src="images/header-heather.png", alt="")
+            hr.short
+            .overview
+              p graphic designer.
+              p firecracker.
+              p cat cuddler.
+            a(href="#projects").button view work.
+      main#main.main
+        section#projects.projects-section
+          header.visuallyhidden
+            h1 projects
+          //- ul.project-grid.small-block-grid-2.medium-block-grid-3
+          ul.project-grid
+            li
+              a(href="#")
+                img(src="images/project-1.jpg", alt="")
+                .overlay
+                  h2 project name.
+            li
+              a(href="#")
+                img(src="images/project-1.jpg", alt="")
+                .overlay
+                  h2 project name.
+            li
+              a(href="#")
+                img(src="images/project-1.jpg", alt="")
+                .overlay
+                  h2 project name.
+        section#about.about-section.page-padding
+          .row
+            .columns.medium-centered.medium-10
+              header
+                h1.title-2 about heather.
+              div
+                img(src="images/heather.jpg", alt="").heather
+                p Heather Argus is a graphic designer currently working in Rochester, NY but on the move to Oceanside, CA. She is dedicated, hard-working and always eager to learn new design skills. When she is not designing, she can be found hiking, traveling, photographing landscapes, exploring, or cuddling cats.
+                a(href="#").button resume.
+                a(href="#").button contact.
+
+      footer.footer
+        img(src="images/freedom.jpg", alt="").footer-banner
+        .row
+          .columns.medium-6
+            p.copyright All works &copy; Heather Argus 2015.
+          .columns.medium-6
+            ul.social-media-list
+              li
+                a(href="#", target="_blank")
+                  img(src="images/social-icons/dribbble.png", alt="Dribble")
+              li
+                a(href="#", target="_blank")
+                  img(src="images/social-icons/linkedin.png", alt="LinkedIn")
+              li
+                a(href="#", target="_blank")
+                  img(src="images/social-icons/instagram.png", alt="Instagram")
+              li
+                a(href="#", target="_blank")
+                  img(src="images/social-icons/behance.png", alt="Behance")
+
+
+    script(src="js/vendor/jquery.min.js")
+    script(src="js/vendor/fastclick.min.js")
+    script(src="js/vendor/foundation.min.js")
+    script(src="js/main.js")

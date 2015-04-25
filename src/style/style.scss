@@ -1,0 +1,182 @@
+@import "vars";
+@import "mixins";
+// 3rd party
+@import "vendor/normalize";
+@import "vendor/print";
+@import "vendor/foundation";
+@import "vendor/classes";
+// custom
+@import "theme/base";
+@import "theme/typography";
+
+
+.page-padding {
+    padding-top: $column-gutter*2;
+    padding-bottom: $column-gutter*2;
+}
+
+
+.button {
+    &:hover {
+        background-color: $black;
+        color: $white;
+    }
+}
+
+.h1 {
+    margin-top: $column-gutter*2;
+    margin-bottom: $column-gutter;
+}
+.overview {
+    margin-bottom: $column-gutter * 0.5;
+    p {
+        font-size: rem-calc(31);
+        margin-bottom: 0;
+    }
+}
+
+
+.project-grid {
+    @include clearfix();
+    list-style: none;
+    li {
+        > a {
+            display: block;
+            > img {
+                width: 100%;
+            }
+            h2 {
+                padding-left: $column-gutter * 0.5;
+                padding-right: $column-gutter * 0.5;
+            }
+        }
+        @include mq(netbook) {
+            width: 33.3%;
+            float: left;
+            a {
+                position: relative;
+                .overlay {
+                    position: absolute;
+                    z-index: 1;
+                    top: 0;
+                    bottom: 0;
+                    left: 0;
+                    right: 0;
+                    margin: 0;
+                    background-color: rgba($black, 0.2);
+                    transition: background-color 0.5s ease;
+                    padding-top: 10%;
+                    padding-bottom: 10%;
+                    padding-left: $column-gutter;
+                    padding-right: $column-gutter;
+                    h2 {
+                        color: $white;
+                        padding-bottom: $column-gutter * 0.5;
+                        font-weight: $semi-bold;
+                        font-size: rem-calc(31);
+                        position: relative;
+                        transition: color 0.5s ease;
+                        &:after {
+                            content: "\0a0";
+                            display: inline-block;
+                            position: absolute;
+                            bottom: 0;
+                            left: 0;
+                            height: 2px;
+                            width: rem-calc(120);
+                            background-color: $white;
+                            transition: background-color 0.5s ease;
+                        }
+                    }
+                }
+                &:hover {
+                    .overlay {
+                        background-color: transparent;
+                        h2 {
+                            color: $black;
+                            &:after {
+                                background-color: $black;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+
+hr.short {
+    max-width: rem-calc(120);
+}
+
+
+
+.title-2 {
+    font-weight: $semi-bold;
+    font-size: rem-calc(31);
+    padding-bottom: $column-gutter;
+    margin-bottom: $column-gutter;
+    position: relative;
+    &:after {
+        content: "\0a0";
+        display: inline-block;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        height: 2px;
+        width: rem-calc(120);
+        background-color: $black;
+        // transition: background-color 0.5s ease;
+    }
+
+}
+
+.about-section {
+    p {
+        font-size: rem-calc(27);
+    }
+    a + a {
+        margin-left: $column-gutter * 0.5;
+    }
+}
+.heather {
+    width: 100%;
+    margin-bottom: $column-gutter * 0.5;
+}
+
+
+
+
+.footer {
+    background-color: $black;
+    color: $white;
+    > .row {
+        padding: rem-calc(20) 0;
+    }
+}
+.footer-banner {
+    display: block;
+    width: 100%;
+    max-height: rem-calc(144);
+}
+
+.copyright {
+    margin-bottom: 0;
+    line-height: rem-calc(57);
+}
+
+.social-media-list {
+    text-align: right;
+    li {
+        display: inline-block;
+        vertical-align: top;
+        // + li {
+        //     margin-left: $column-gutter/2;
+        // }
+    }
+    a, img {
+        display: block;
+    }
+}
