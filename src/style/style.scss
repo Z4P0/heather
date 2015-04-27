@@ -26,6 +26,10 @@
 .h1 {
     margin-top: $column-gutter*2;
     margin-bottom: $column-gutter;
+    transition: background 0.4s ease;
+    background-image: url(../images/header-heather.png);
+    background-repeat: no-repeat;
+    background-size: contain;
 }
 .overview {
     margin-bottom: $column-gutter * 0.5;

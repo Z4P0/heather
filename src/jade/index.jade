@@ -15,14 +15,14 @@ html(lang="en").no-js
       header.header.page-padding
         .row
           .columns.medium-centered.medium-10
-            h1.h1
+            h1.h1#h1
               span.visuallyhidden heather.
-              img(src="images/header-heather.png", alt="")
+              img#heather-image(src="images/header-heather.png", alt="").invisible
             hr.short
             .overview
-              p#heather(data-image-filename="header-heather.png") graphic designer.
-              p#firecracker(data-image-filename="header-firecracker.png") firecracker.
-              p#cats(data-image-filename="header-catcuddler.png") cat cuddler.
+              p(data-image-filename="images/header-heather.png") graphic designer.
+              p(data-image-filename="images/header-firecracker.png") firecracker.
+              p(data-image-filename="images/header-catcuddler.png") cat cuddler.
             a(href="#projects").button view work.
       main#main.main
         section#projects.projects-section
