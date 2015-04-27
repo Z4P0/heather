@@ -15,7 +15,7 @@ html(lang="en").no-js
       header.header.page-padding
         .row
           .columns.medium-centered.medium-10
-            h1.h1#h1
+            h1.logo#h1
               span.visuallyhidden heather.
               img#heather-image(src="images/header-heather.png", alt="").invisible
             hr.short
@@ -31,17 +31,17 @@ html(lang="en").no-js
           //- ul.project-grid.small-block-grid-2.medium-block-grid-3
           ul.project-grid
             li
-              a(href="#")
+              a(href="project.html")
                 img(src="images/project-thumbs/bassproTOC_color_72dpi.jpg", alt="")
                 .overlay
                   h2 project name.
             li
-              a(href="#")
+              a(href="project.html")
                 img(src="images/project-thumbs/Critical_Eating_Color_72dpi.jpg", alt="")
                 .overlay
                   h2 project name.
             li
-              a(href="#")
+              a(href="project.html")
                 img(src="images/project-thumbs/OntarioPathways_Color_72dpi.jpg", alt="")
                 .overlay
                   h2 project name.
@@ -56,28 +56,5 @@ html(lang="en").no-js
                 a(href="#").button resume.
                 a(href="#").button contact.
 
-      footer.footer
-        img(src="images/freedom.jpg", alt="").footer-banner
-        .row
-          .columns.medium-6
-            p.copyright All works &copy; Heather Argus 2015.
-          .columns.medium-6
-            ul.social-media-list
-              li
-                a(href="#", target="_blank")
-                  img(src="images/social-icons/dribbble.png", alt="Dribble")
-              li
-                a(href="#", target="_blank")
-                  img(src="images/social-icons/linkedin.png", alt="LinkedIn")
-              li
-                a(href="#", target="_blank")
-                  img(src="images/social-icons/instagram.png", alt="Instagram")
-              li
-                a(href="#", target="_blank")
-                  img(src="images/social-icons/behance.png", alt="Behance")
-
-
-    script(src="js/vendor/jquery.min.js")
-    script(src="js/vendor/fastclick.min.js")
-    script(src="js/vendor/foundation.min.js")
-    script(src="js/main.js")
+      include _footer.jade
+    include _scripts.jade

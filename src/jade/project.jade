@@ -1,0 +1,75 @@
+doctype html
+html(lang="en").no-js
+  head
+    meta(charset="utf-8")
+    meta(http-equiv="X-UA-Compatible", content="IE=edge,chrome=1")
+    title Heather Argus | Graphic Designer
+    meta(name="description", content="Heather Argus | Graphic Designer")
+    <script src="//use.typekit.net/hmb2zfg.js"></script>
+    <script>try{Typekit.load();}catch(e){}</script>
+    include _head.jade
+
+  body#index
+    a(href="#main").visuallyhidden Skip to main content
+    .container
+      include _header.jade
+      main#main.main
+        header.project-header.page-padding
+          .row
+            .columns
+              h1 Critical Eating.
+              p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus assumenda tempora ipsam, sequi nobis earum voluptatum quas. Quia inventore ipsa nulla dolorem ut accusamus autem vel, quisquam aliquid accusantium soluta.
+        .page-padding
+          .logo-and-palette.row
+            .columns.medium-6
+              img(src="http://lorempixel.com/300/300", alt="")
+            .columns.medium-6
+              strong Color Palette:
+              ul.palette-list
+                li
+                  .swatch.pantone-3395
+                  span Pantone 3395 C
+                  span C=66 M=0 Y=48 K=0
+                li
+                  .swatch.pantone-3395
+                  span Pantone 3395 C
+                  span C=66 M=0 Y=48 K=0
+                li
+                  .swatch.pantone-3395
+                  span Pantone 3395 C
+                  span C=66 M=0 Y=48 K=0
+                li
+                  .swatch.pantone-3395
+                  span Pantone 3395 C
+                  span C=66 M=0 Y=48 K=0
+              strong Typography:
+              .row
+                .columns.medium-6
+                  .sample-text abcdefg
+                  .font-family-weight Museo Sans 700
+                .columns.medium-6
+                  .sample-text abcdefg
+                  .font-family-weight Museo Sans 500
+        hr
+        .page-padding
+          .row
+            .columns
+              h2.section-title process.
+              img(src="http://lorempixel.com/1200/400", alt="")
+              p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ea eius quasi quisquam officiis tempora placeat, quod deserunt voluptatum, debitis quibusdam, praesentium labore asperiores aliquid rerum similique repudiandae cupiditate eaque.
+        hr
+        .page-padding
+          .row
+            .columns
+              h2.section-title poster.
+              .row
+                .columns.medium-3
+                  p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ea eius quasi quisquam officiis tempora placeat, quod deserunt voluptatum, debitis quibusdam, praesentium labore asperiores aliquid rerum similique repudiandae cupiditate eaque.
+                  p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad sint ipsa sed voluptatem perspiciatis at, dolorem, minima, blanditiis vero dolores nam officia ea. Mollitia facere natus eaque molestias quasi aspernatur!
+                .columns.medium-9
+                  img(src="http://lorempixel.com/800/1000", alt="")
+
+
+
+      include _footer.jade
+    include _scripts.jade
