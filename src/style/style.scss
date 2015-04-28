@@ -232,3 +232,23 @@ hr.short {
         margin-bottom: $column-gutter * 0.75;
     }
 }
+
+
+.section-title {
+    text-transform: lowercase;
+    font-weight: $semi-bold;
+    font-size: rem-calc(30);
+    padding-bottom: $column-gutter*0.5;
+    margin-bottom: $column-gutter;
+    position: relative;
+    &:after {
+        content: "\0a0";
+        display: inline-block;
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        background-color: $black;
+        height: 1px;
+        width: $column-gutter*3;
+    }
+}
